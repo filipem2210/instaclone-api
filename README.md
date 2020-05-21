@@ -2,6 +2,8 @@
 
 <p align="center">Instagram clone with backend, frontend and mobile using Node.js, React and React Native</p>
 
+[![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=Instaclone&uri=https%3A%2F%2Fraw.githubusercontent.com%2Ffilipem2210%2Finstaclone-api%2Fmaster%2Finsomnia-instaclone-button.json)
+
 ## :computer: Technologies
 
 * [Node.js](https://nodejs.org/en/)
