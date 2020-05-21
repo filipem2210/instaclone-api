@@ -1,0 +1,527 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2020-05-21T05:22:54.782Z",
+  "__export_source": "insomnia.desktop.app:v7.1.1",
+  "resources": [
+    {
+      "_id": "req_2baf0934cd0746bc8c9f9a7dc6c96584",
+      "authentication": {},
+      "body": {
+        "mimeType": "multipart/form-data",
+        "params": [
+          {
+            "description": "",
+            "disabled": false,
+            "fileName": "C:\\Users\\Filipe\\Downloads\\eu_avatar_fb.jpg",
+            "id": "pair_7666796a4e34415a8106e98e6ac8b742",
+            "name": "avatar",
+            "type": "file",
+            "value": ""
+          },
+          {
+            "description": "",
+            "disabled": false,
+            "id": "pair_553b861334d14485afab4e7e638c7699",
+            "name": "username",
+            "value": "username"
+          },
+          {
+            "description": "",
+            "disabled": false,
+            "id": "pair_5d7581429bd44aa29af8b6020357effc",
+            "name": "name",
+            "value": "Full Name"
+          },
+          {
+            "description": "",
+            "disabled": false,
+            "id": "pair_8b96a7226a3d419f867622aa9f00ba04",
+            "name": "email",
+            "value": "email@gmail.com"
+          },
+          {
+            "description": "",
+            "disabled": false,
+            "id": "pair_11d3c809a5be426fa9c3fe52edcca049",
+            "name": "password",
+            "value": "password1234"
+          }
+        ]
+      },
+      "created": 1587499529314,
+      "description": "",
+      "headers": [
+        {
+          "id": "pair_659cd95651b5430b8e4ef0b18b8fb22f",
+          "name": "Content-Type",
+          "value": "multipart/form-data"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1587429835505,
+      "method": "POST",
+      "modified": 1590038182231,
+      "name": "Create",
+      "parameters": [],
+      "parentId": "fld_243d85650c3a4faabcc1080b7315e422",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ base_url  }}/signup",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_243d85650c3a4faabcc1080b7315e422",
+      "created": 1587429829012,
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1587429829049.5,
+      "modified": 1587521586768,
+      "name": "Users",
+      "parentId": "wrk_135dc4a3ec6c4dc18d22c671a43d60d0",
+      "_type": "request_group"
+    },
+    {
+      "_id": "wrk_135dc4a3ec6c4dc18d22c671a43d60d0",
+      "created": 1587407457444,
+      "description": "",
+      "modified": 1590038311420,
+      "name": "Instaclone",
+      "parentId": null,
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_bd51b49731f74e80806d5c508c0859b4",
+      "authentication": {
+        "token": "",
+        "type": "bearer"
+      },
+      "body": {},
+      "created": 1588990105457,
+      "description": "",
+      "headers": [],
+      "isPrivate": false,
+      "metaSortKey": -1586917939675.5,
+      "method": "GET",
+      "modified": 1590038424538,
+      "name": "Show",
+      "parameters": [],
+      "parentId": "fld_243d85650c3a4faabcc1080b7315e422",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ base_url  }}/me",
+      "_type": "request"
+    },
+    {
+      "_id": "req_eabd39431714469bbf4e64ac2db51e7d",
+      "authentication": {
+        "token": "",
+        "type": "bearer"
+      },
+      "body": {
+        "mimeType": "multipart/form-data",
+        "params": [
+          {
+            "description": "",
+            "fileName": "C:\\Users\\Filipe\\Downloads\\11776.jpg",
+            "id": "pair_daa79ac6793a4ad2b6c1adf795734c8c",
+            "name": "avatar",
+            "type": "file",
+            "value": ""
+          },
+          {
+            "description": "",
+            "id": "pair_af19222144554ce4832a0310e3e7e870",
+            "name": "username",
+            "value": "newusername"
+          },
+          {
+            "description": "",
+            "id": "pair_abb2239856f845dab4d9b7de3fc6689b",
+            "name": "name",
+            "value": "New Full Name"
+          },
+          {
+            "description": "",
+            "id": "pair_2c04c1564fa94389ba139ae921209e6c",
+            "name": "email",
+            "value": "new@email.com"
+          },
+          {
+            "description": "",
+            "id": "pair_103c7622b6bc48eb93369807cb495b41",
+            "name": "",
+            "value": ""
+          }
+        ]
+      },
+      "created": 1589073083360,
+      "description": "",
+      "headers": [
+        {
+          "id": "pair_78dce794615346ee9fe9050de06f2103",
+          "name": "Content-Type",
+          "value": "multipart/form-data"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1586917939625.5,
+      "method": "PUT",
+      "modified": 1590038427542,
+      "name": "Update",
+      "parameters": [],
+      "parentId": "fld_243d85650c3a4faabcc1080b7315e422",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ base_url  }}/me/edit",
+      "_type": "request"
+    },
+    {
+      "_id": "req_d53cf77a6388436faeea5363741d9dca",
+      "authentication": {},
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"email\": \"email@gmail.com\",\n\t\"password\": \"password1234\"\n}"
+      },
+      "created": 1587521335261,
+      "description": "",
+      "headers": [
+        {
+          "id": "pair_6961f272549a4ee0949e89606eb87510",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1587521335261,
+      "method": "POST",
+      "modified": 1590038211244,
+      "name": "Create",
+      "parameters": [],
+      "parentId": "fld_597a3cc9868146f596c10ca35ce5d1cc",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ base_url  }}/signin",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_597a3cc9868146f596c10ca35ce5d1cc",
+      "created": 1587521324879,
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1587429829046.375,
+      "modified": 1587582964405,
+      "name": "Sessions",
+      "parentId": "wrk_135dc4a3ec6c4dc18d22c671a43d60d0",
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_801b64d30cfd40db9ed3e88b14642d15",
+      "authentication": {
+        "disabled": false,
+        "token": "",
+        "type": "bearer"
+      },
+      "body": {},
+      "created": 1587523124757,
+      "description": "",
+      "headers": [],
+      "isPrivate": false,
+      "metaSortKey": -1587523124757,
+      "method": "GET",
+      "modified": 1590038376800,
+      "name": "List",
+      "parameters": [],
+      "parentId": "fld_c933afe65b2d47619dd413785e5985b4",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ base_url  }}/posts",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_c933afe65b2d47619dd413785e5985b4",
+      "created": 1587523108371,
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": {},
+      "metaSortKey": -1587429829045.5938,
+      "modified": 1588395334818,
+      "name": "Posts",
+      "parentId": "wrk_135dc4a3ec6c4dc18d22c671a43d60d0",
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_6738e908e36f4da0aa2dc390abb47864",
+      "authentication": {
+        "token": "",
+        "type": "bearer"
+      },
+      "body": {
+        "mimeType": "multipart/form-data",
+        "params": [
+          {
+            "description": "",
+            "disabled": false,
+            "fileName": "C:\\Users\\Filipe\\Downloads\\11748.jpg",
+            "id": "pair_d6e6ad55989744ff91a0657801465d32",
+            "name": "image",
+            "type": "file",
+            "value": ""
+          },
+          {
+            "description": "",
+            "disabled": false,
+            "id": "pair_3b59049e14f744cb9f79815459afc308",
+            "name": "place",
+            "value": "Florianópolis"
+          },
+          {
+            "description": "",
+            "disabled": false,
+            "id": "pair_ce93fe0d992e4695910311faeab43dd3",
+            "name": "description",
+            "value": "Example image"
+          },
+          {
+            "description": "",
+            "disabled": false,
+            "id": "pair_e9155667a70840cf8aab0ad0156ede29",
+            "name": "hashtags",
+            "value": "#floripa #nodejs #reactjs #reactnative"
+          }
+        ]
+      },
+      "created": 1587611666129,
+      "description": "",
+      "headers": [
+        {
+          "id": "pair_3074275aafe74c61b3fa4ffc554c3ecc",
+          "name": "Content-Type",
+          "value": "multipart/form-data"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1587523124707,
+      "method": "POST",
+      "modified": 1590038417629,
+      "name": "Create",
+      "parameters": [],
+      "parentId": "fld_c933afe65b2d47619dd413785e5985b4",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ base_url  }}/posts",
+      "_type": "request"
+    },
+    {
+      "_id": "req_d6d6d508602c4b50b8f786a0e0492d9c",
+      "authentication": {
+        "token": "",
+        "type": "bearer"
+      },
+      "body": {},
+      "created": 1588205436739,
+      "description": "",
+      "headers": [],
+      "isPrivate": false,
+      "metaSortKey": -1587523124694.5,
+      "method": "GET",
+      "modified": 1590038436212,
+      "name": "Show",
+      "parameters": [],
+      "parentId": "fld_c933afe65b2d47619dd413785e5985b4",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ base_url  }}/posts/1",
+      "_type": "request"
+    },
+    {
+      "_id": "req_b830b0f8d1dd4442a5dc0952e4941a7a",
+      "authentication": {
+        "token": "",
+        "type": "bearer"
+      },
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"place\": \"New Place\",\n\t\"description\": \"New Description\",\n\t\"hashtags\": \"#new #hashtags\"\n}"
+      },
+      "created": 1587772713336,
+      "description": "",
+      "headers": [
+        {
+          "id": "pair_9f9fed7e9de04ff99df2ae1148fcb5a9",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1587523124682,
+      "method": "PUT",
+      "modified": 1590038438659,
+      "name": "Update",
+      "parameters": [],
+      "parentId": "fld_c933afe65b2d47619dd413785e5985b4",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ base_url  }}/posts/1",
+      "_type": "request"
+    },
+    {
+      "_id": "req_b17cf80a66264a569dae20beeb40b153",
+      "authentication": {
+        "token": "",
+        "type": "bearer"
+      },
+      "body": {},
+      "created": 1587766184476,
+      "description": "",
+      "headers": [],
+      "isPrivate": false,
+      "metaSortKey": -1587523124657,
+      "method": "DELETE",
+      "modified": 1590038441055,
+      "name": "Delete",
+      "parameters": [],
+      "parentId": "fld_c933afe65b2d47619dd413785e5985b4",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ base_url  }}/posts/1",
+      "_type": "request"
+    },
+    {
+      "_id": "req_aa22aaadae484382ae19320f95203048",
+      "authentication": {
+        "token": "",
+        "type": "bearer"
+      },
+      "body": {},
+      "created": 1587769536389,
+      "description": "",
+      "headers": [],
+      "isPrivate": false,
+      "metaSortKey": -1587769536389,
+      "method": "POST",
+      "modified": 1590038444679,
+      "name": "Create",
+      "parameters": [],
+      "parentId": "fld_be47ee0f486d49798a2841a84200152a",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ base_url  }}/posts/1/like",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_be47ee0f486d49798a2841a84200152a",
+      "created": 1587769493946,
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1587429829044.8125,
+      "modified": 1587769499644,
+      "name": "Likes",
+      "parentId": "wrk_135dc4a3ec6c4dc18d22c671a43d60d0",
+      "_type": "request_group"
+    },
+    {
+      "_id": "env_8b4a299e77d24972d4714b13b58d18e29e92dd70",
+      "color": null,
+      "created": 1587407457610,
+      "data": {},
+      "dataPropertyOrder": {},
+      "isPrivate": false,
+      "metaSortKey": 1587407457610,
+      "modified": 1588381201372,
+      "name": "Base Environment",
+      "parentId": "wrk_135dc4a3ec6c4dc18d22c671a43d60d0",
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_8b4a299e77d24972d4714b13b58d18e29e92dd70",
+      "cookies": [],
+      "created": 1587407457614,
+      "modified": 1587407457614,
+      "name": "Default Jar",
+      "parentId": "wrk_135dc4a3ec6c4dc18d22c671a43d60d0",
+      "_type": "cookie_jar"
+    },
+    {
+      "_id": "env_02b64ace250a4081ab42d560bd9cdd0f",
+      "color": "#ff0d0d",
+      "created": 1588381128406,
+      "data": {
+        "base_url": "http://localhost:3333/api"
+      },
+      "dataPropertyOrder": {
+        "&": [
+          "base_url"
+        ]
+      },
+      "isPrivate": false,
+      "metaSortKey": 1588381128406,
+      "modified": 1588381191103,
+      "name": "Development",
+      "parentId": "env_8b4a299e77d24972d4714b13b58d18e29e92dd70",
+      "_type": "environment"
+    },
+    {
+      "_id": "env_d726bf0f4c4d453ab84da7a87b89ca5e",
+      "color": "#40f440",
+      "created": 1588381152014,
+      "data": {
+        "base_url": "https://filipem2210-instaclone-api.herokuapp.com/api"
+      },
+      "dataPropertyOrder": {
+        "&": [
+          "base_url"
+        ]
+      },
+      "isPrivate": false,
+      "metaSortKey": 1588381152014,
+      "modified": 1590037787443,
+      "name": "Production",
+      "parentId": "env_8b4a299e77d24972d4714b13b58d18e29e92dd70",
+      "_type": "environment"
+    }
+  ]
+}
