@@ -101,7 +101,7 @@ module.exports = {
 
       req.io.emit('post', newPost);
 
-      return res.status(200).send({ message: 'Post criado' });
+      return res.status(201).send({ message: 'Post criado' });
     } catch (error) {
       return res.status(500).json(`${error}`);
     }
